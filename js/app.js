@@ -1,4 +1,4 @@
-alert("APP CARGADA");
+console.log("APP CARGADA");
 /*const supabaseUrl =
 "https://awnynegmibntazfosfkb.supabase.co";
 const supabaseKey =
