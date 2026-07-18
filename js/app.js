@@ -3,7 +3,7 @@ console.log("APP CARGADA");
 "https://awnynegmibntazfosfkb.supabase.co";
 const supabaseKey =
 "sb_publishable__pmKerifkN5bj2DsYjI1kQ_79q0kgGe";
-const supabase = window.supabase.createClient(
+const supabaseClient = window.supabase.createClient(
     supabaseUrl,
     supabaseKey
 );
