@@ -1,13 +1,9 @@
-import { createClient }
-from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-
+alert("APP CARGADA");
 const supabaseUrl =
 "https://awnynegmibntazfosfkb.supabase.co";
-
 const supabaseKey =
-"sb_publishable__pmKerifkN5bj2DsYjI1kQ_79q0kgGe";
-
-const supabase = createClient(
+"sb_publishable_TU_CLAVE_COMPLETA";
+const supabase = window.supabase.createClient(
     supabaseUrl,
     supabaseKey
 );
