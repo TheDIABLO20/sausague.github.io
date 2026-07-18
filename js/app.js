@@ -1,19 +1,15 @@
 alert("APP CARGADA");
-import { createClient }
-from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
-
 const supabaseUrl =
 "https://awnynegmibntazfosfkb.supabase.co";
-
 const supabaseKey =
-"sb_publishable__pmKerifkN5bj2DsYjI1kQ_79q0kgGe";
-
-const supabase = createClient(
+"sb_publishable_TU_CLAVE_COMPLETA";
+const supabase = window.supabase.createClient(
     supabaseUrl,
     supabaseKey
 );
 
 let registerMode = false;
+
 
 const title = document.getElementById("title");
 const actionBtn = document.getElementById("actionBtn");
