@@ -1,5 +1,5 @@
 alert("APP CARGADA");
-const supabaseUrl =
+/*const supabaseUrl =
 "https://awnynegmibntazfosfkb.supabase.co";
 const supabaseKey =
 "sb_publishable__pmKerifkN5bj2DsYjI1kQ_79q0kgGe";
@@ -78,4 +78,4 @@ actionBtn.addEventListener("click", async () => {
         `❌ ${error.message}`;
     }
 
-});
+});*\
