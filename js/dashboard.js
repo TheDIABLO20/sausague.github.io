@@ -1,8 +1,8 @@
 alert("APP CARGADA");
 const supabaseUrl =
-"https://awnynegmibntazfosfkb.supabase.co";
+"https://awwynegmibntazfosfkb.supabase.co";
 const supabaseKey =
-"sb_publishable__pmKerifkN5bj2DsYjI1kQ_79q0kgGe";
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF3d3luZWdtaWJudGF6Zm9zZmtiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQzNjA1NDIsImV4cCI6MjA5OTkzNjU0Mn0.cw8_5Sx0VWmMTwFV2oKYYQbAvkAsVF2eLGge1rBbL70";
 const supabaseClient = window.supabase.createClient(
     supabaseUrl,
     supabaseKey
@@ -32,7 +32,7 @@ async function loadUser() {
     `Correo: ${user.email}`;
 
     const { data, error } =
-    await supabase
+    await supabaseClient
         .from("profiles")
         .select("*")
         .eq("id", user.id)
