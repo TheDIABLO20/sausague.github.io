@@ -3,45 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     <title>Login Premium</title>
 </head>
 <body>
 
-<div class="bg"></div>
-<div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg"></div>
 
-<div class="login-card">
+    <div class="login-card">
 
-    <div class="logo">B</div>
+        <div class="logo">B</div>
 
-    <h1 id="title">Iniciar Sesión</h1>
+        <h1 id="title">Iniciar Sesión</h1>
 
-    <div class="input-group">
-        <input
-            type="email"
-            id="email"
-            placeholder="Correo electrónico">
+        <!-- Solo aparece al registrarse -->
+        <div class="input-group" id="usernameGroup" style="display: none;">
+            <input
+                type="text"
+                id="username"
+                placeholder="Nombre de usuario">
+        </div>
+
+        <div class="input-group">
+            <input
+                type="email"
+                id="email"
+                placeholder="Correo electrónico"
+                required>
+        </div>
+
+        <div class="input-group">
+            <input
+                type="password"
+                id="password"
+                placeholder="Contraseña"
+                required>
+        </div>
+
+        <button id="actionBtn">
+            Iniciar Sesión
+        </button>
+
+        <div class="switch" id="switchMode">
+            ¿No tienes cuenta? <span>Regístrate</span>
+        </div>
+
+        <p id="message"></p>
+
     </div>
-
-    <div class="input-group">
-        <input
-            type="password"
-            id="password"
-            placeholder="Contraseña">
-    </div>
-
-    <button id="actionBtn">
-        Iniciar Sesión
-    </button>
-
-    <div class="switch" id="switchMode">
-        ¿No tienes cuenta? Regístrate
-    </div>
-
-    <p id="message"></p>
-
-</div>
-<script src="js/script.js"></script>
+    <script src="js/Main.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
