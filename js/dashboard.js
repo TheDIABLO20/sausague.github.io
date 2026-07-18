@@ -3,7 +3,7 @@ const supabaseUrl =
 "https://awnynegmibntazfosfkb.supabase.co";
 const supabaseKey =
 "sb_publishable__pmKerifkN5bj2DsYjI1kQ_79q0kgGe";
-const supabase = window.supabase.createClient(
+const supabaseClient = window.supabase.createClient(
     supabaseUrl,
     supabaseKey
 );
@@ -21,7 +21,7 @@ async function loadUser() {
 
     const {
         data: { user }
-    } = await supabase.auth.getUser();
+    } = await supabaseClient.auth.getUser();
 
     if(!user){
         window.location.href = "index.html";
@@ -55,7 +55,7 @@ logoutBtn.addEventListener(
     "click",
     async () => {
 
-        await supabase.auth.signOut();
+        await supabaseClient.auth.signOut();
 
         window.location.href =
         "index.html";
