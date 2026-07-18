@@ -114,16 +114,23 @@ button:hover{
 }
 
 .switch{
-    color:white;
     margin-top:20px;
+    color:white;
     cursor:pointer;
+    text-align:center;
 }
 
-.switch:hover{
+.switch span{
     color:#06b6d4;
+    font-weight:bold;
+}
+
+.switch span:hover{
+    color:#38bdf8;
 }
 
 #message{
-    margin-top:20px;
+    margin-top:15px;
+    text-align:center;
     color:white;
 }
